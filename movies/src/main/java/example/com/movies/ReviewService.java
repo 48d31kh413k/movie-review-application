@@ -13,7 +13,7 @@ public class ReviewService {
 
     @Autowired
     private MongoTemplate mongoTemplate;
-    
+
     public Review creatReview(String reviewBody, String imdbId) {
         Review review = reviewRepository.insert(new Review(reviewBody));
 
